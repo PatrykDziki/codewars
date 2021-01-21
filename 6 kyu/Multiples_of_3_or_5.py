@@ -18,3 +18,7 @@ def solution(number):
             solution_numbers.append(i)
 
     return sum(solution_numbers)
+
+
+def best_practices_solution(number):
+    return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
